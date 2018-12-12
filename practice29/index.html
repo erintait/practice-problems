@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Practice Problem #29: do_math</title>
+    <script type="text/javascript">
+    
+    function do_math(num1, num2, operator){
+        if(operator === '+'){
+            result = num1 + num2;
+        } else if(operator === '-'){
+            result = num1 - num2;
+        } else if(operator === 'x' || operator === '*' || operator === "X" || operator === '×'){
+            result = num1 * num2;
+        } else if (operator === '/' || operator === '÷'){
+            result = num1 / num2;
+        } else {
+            return console.log('please use a valid operator: +, -, x, or /');
+        }
+        return result;
+    }
+
+    console.log('result of example input 5, 2, and *:', do_math(5,2,'*'));
+    
+    </script>
+</head>
+<body>
+
+    <h1>Practice Problem #29: do_math</h1>
+    <p>Build a function, do_math, that takes in 3 parameters: num1 (number), num2 (number), and operator (string)</p>
+    <ul>
+        <li>it uses the operator to determine what math to do to the numbers</li>
+        <ul>
+            <li>if '+', it adds them</li>
+            <li>if '-', it subtracts them</li>
+            <li>if '*' or 'x' or 'X', it multiplies them</li>
+            <li>if '/', it divides them</li>
+        </ul>
+        <li>it then returns the result</li>
+    </ul>
+
+    <p>Example:</p>
+    <pre>
+    do_math(5,2,'*')
+    Return: 10</pre>
+</body>
+</html>
