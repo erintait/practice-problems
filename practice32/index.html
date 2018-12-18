@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practice Problem #32: Find Middle of String</title>
+        <script type="text/javascript">
+            function find_middle_letters(string){
+                stringArray = string.split('');
+                var halvedLength = stringArray.length / 2;
+                if(string.length % 2 === 0){
+                    return stringArray[halvedLength-1] + '' + stringArray[halvedLength];
+                } else {
+                    halvedLength = Math.ceil(halvedLength);
+                    return stringArray[halvedLength-1];
+                }
+            }
+
+            var answer = find_middle_letters('seven');
+            console.log("find_middle_letters('seven')", answer);
+
+            var answer2 = find_middle_letters('dish');
+            console.log("find_middle_letters('dish'):", answer2);
+        
+        
+        </script>
+    </head>
+    <body>
+        <h1>Practice Problem #32: Find Middle of String</h1>
+        <p>Build a function, find_middle_letters, that finds the middle of a string. If the string is an odd number of characters, it returns 1 letter. If it is an even number of characters, it returns 2 characters. It takes a string as a parameter.</p>
+        <ul>
+            <li>Example:</li>
+                <ul>
+                    <li>find_middle_letters('seven')</li>
+                        <ul>
+                            <li>Return: 'v'</li>
+                        </ul>
+                    <li>find_middle_letters('dish')</li>
+                        <ul>
+                            <li>Return: 'is'</li>
+                        </ul>
+                </ul>
+        </ul>
+    </body>
+</html>
